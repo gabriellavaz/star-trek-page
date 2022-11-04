@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+/* GENERAL-----------------------------------------------------------------------------------------*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent), url(../assets/img/espaco.jpg);
+    text-align: center;
+    overflow: overlay;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    margin-inline: auto;
+}
+
+@font-face {
+    font-family: 'EdgeOfTheGalaxy';
+    src: url('../font/EdgeOfTheGalaxyRegular.otf');
+    font-style: normal;
+}
+
+
+h1{
+    font-family: 'EdgeOfTheGalaxy', Times, serif;
+    font-size: 14rem;
+    letter-spacing: .2rem;
+    font-weight: 100;
+    color: rgb(209, 209, 209);
+    text-shadow: 3px 3px 2px rgb(84, 143, 177);
+
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    color: rgb(216, 216, 216);
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+
+/* HEADER-----------------------------------------------------------------------------------------*/
+.conteudo-banner{
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: right center;
+    background-size: 100%;
+}
+
+/* MAIN-----------------------------------------------------------------------------------------*/
+
+.cartoes-personagens{
+    max-width: 100rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+.cartoes-personagens .personagem img{
+    width: 30rem;
+    height: 45rem;
+    border-radius: 1rem;
+}
+
+.cartoes-personagens .personagem:hover img{
+    -webkit-filter: grayscale(100%) blur(7px);
+	filter: grayscale(100%) blur(7px);
+}
+
+.cartoes-personagens .personagem p{
+    display: none;
+}
+
+.cartoes-personagens .personagem p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    margin-left: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+} 
+
+.cartoes-personagens .personagem span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-right: .5rem;
+    color: #000;
+}
+
+.cartoes-personagens .personagem:hover p{
+    display: inline-block;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    text-align: left;
+}
+
+
+/* FOOTER-----------------------------------------------------------------------------------------*/
+footer{
+    margin-top: 8rem;
+    padding-block: 2rem;
+    background-color: #000;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+}
